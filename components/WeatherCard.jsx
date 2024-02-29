@@ -27,7 +27,6 @@ const WeatherCard = ({ apiKey }) => {
           <p className="mb-1">{weather.name}, {weather.sys.country}</p>
           <p className="mb-1">{weather.weather[0].description}</p>
           <p className="font-bold">Temperature: {(weather.main.temp - 273.15).toFixed(1)}°C</p>
-
         </div>
       )}
     </div>
