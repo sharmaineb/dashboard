@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
 
-const ConstructorBarChart = () => {
+const LineChart = () => {
   const [chartData, setChartData] = useState({
     labels: [],
     datasets: [],
@@ -18,7 +18,7 @@ const ConstructorBarChart = () => {
       },
       title: {
         display: true,
-        text: '2024 Formula 1 Season Constructor Points',
+        text: '2024 Formula 1 Season Results',
         color: 'white',
       },
     },
@@ -41,12 +41,14 @@ const ConstructorBarChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://ergast.com/api/f1/2024/constructorStandings.json');
+        const response = await fetch('http://ergast.com/api/f1/2024/last/results.json');
         const data = await response.json();
 
-        const constructorStandings = data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings;
-        const labels = constructorStandings.map((standing) => standing.Constructor.name);
-        const pointsData = constructorStandings.map((standing) => parseInt(standing.points));
+        const raceResults = data.MRData.RaceTable.Races[0].Results;
+        const labels = raceResults.map(
+          (result) => result.Driver.givenName + ' ' + result.Driver.familyName
+        );
+        const pointsData = raceResults.map((result) => parseInt(result.points));
 
         setChartData({
           labels: labels,
@@ -54,7 +56,8 @@ const ConstructorBarChart = () => {
             {
               label: 'Points',
               data: pointsData,
-              backgroundColor: 'rgb(75, 192, 192)',
+              borderColor: 'rgb(53, 162, 235)',
+              backgroundColor: 'rgba(0, 0, 0, 0)',
             },
           ],
         });
@@ -69,10 +72,10 @@ const ConstructorBarChart = () => {
   return (
     <>
       <div className='w-full md:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-black'>
-        <Bar data={chartData} options={chartOptions} />
+        <Line data={chartData} options={chartOptions} />
       </div>
     </>
   );
 };
 
-export default ConstructorBarChart;
+export default LineChart;

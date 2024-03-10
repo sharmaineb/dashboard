@@ -1,11 +1,14 @@
 import React from 'react';
-import BarChart from '@/components/BarChart';
+
 import F1Schedule from '@/components/F1Schedule';
+import LineChart from '@/components/LineChart';
+import ConstructorBarChart from '@/components/BarChart';
 
 const Sports = () => {
   return (
     <div className="bg-gray-900">
-      <BarChart />
+      <LineChart />
+      <ConstructorBarChart />
       <F1Schedule />
     </div>
   );

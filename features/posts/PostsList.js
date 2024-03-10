@@ -12,7 +12,7 @@ const PostsList = () => {
         <div className="font-oswald bg-gray-900">
             <section className="max-w-screen-xl mx-auto py-16 px-4 lg:px-6">
                 <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                    <h2 className="font-oswald mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">Recent Film Entries:</h2>
+                    <h2 className="font-oswald mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">Recently Watched Films:</h2>
                 </div>
                 <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
                     {orderedPosts.map(post => (

@@ -11,8 +11,8 @@ const Calendar = () => {
         plugins={[dayGridPlugin]}
         initialView="dayGridMonth"
         events={[
-          { title: 'Event 1', date: '2024-02-29' },
-          { title: 'Event 2', date: '2024-03-01' },
+          { title: 'Intensive Kick Off', date: '2024-03-11' },
+          { title: 'Doc Appt', date: '2024-03-12' },
           // add more events later
         ]}
       />

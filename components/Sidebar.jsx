@@ -4,7 +4,7 @@ import Image from 'next/image';
 import ProfileImage from '../public/profile.png';
 
 import { IoCamera } from "react-icons/io5";
-import { FaMoneyBill } from 'react-icons/fa';
+import { FaTasks } from "react-icons/fa";
 import { GiRaceCar } from 'react-icons/gi';
 import { BiCameraMovie } from 'react-icons/bi'
 import { IoMdHome } from 'react-icons/io';
@@ -41,14 +41,14 @@ const Sidebar = ({children}) => {
                         <GiRaceCar size={20} />
                     </div>
                 </Link>
-                <Link href='/finance'>
+                <Link href='/tasks'>
                     <div className='bg-blue-200 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-                        <FaMoneyBill size={20} />
+                        <FaTasks size={20} />
                     </div>
                 </Link>
             </div>
             <div className='mt-auto'>
-                <Link href='/profile'>
+                <Link href='/'>
                     <div className='bg-blue-200 hover:bg-gray-200 cursor-pointer p-3 rounded-lg inline-block'>
                         <Image src={ProfileImage} alt="Profile" width={20} height={20} />
                     </div>
@@ -61,4 +61,3 @@ const Sidebar = ({children}) => {
 }
 
 export default Sidebar;
-
