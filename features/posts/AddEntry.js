@@ -28,7 +28,7 @@ const AddEntryForm = () => {
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">Add a New Entry</h2>
                 <form className="space-y-4">
                     <div>
-                        <label htmlFor="postTitle" className="block text-gray-800 mb-1">Entry Title:</label>
+                        <label htmlFor="postTitle" className="block text-gray-800 mb-1">Movie Title:</label>
                         <input
                             type="text"
                             id="postTitle"
