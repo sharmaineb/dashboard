@@ -6,7 +6,7 @@ import ConstructorBarChart from '@/components/BarChart';
 
 const Sports = () => {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-zinc-900">
       <LineChart />
       <ConstructorBarChart />
       <F1Schedule />
