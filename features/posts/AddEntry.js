@@ -23,9 +23,9 @@ const AddEntryForm = () => {
 
     return (
         <div className="font-oswald bg-zinc-900">
-            <section className="max-w-2xl mx-auto bg-slate-200 p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">Still figuring out whether I need this h2 or not, lmao.</h2>
-                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Add a New Entry</h2>
+            <section className="max-w-2xl mx-auto bg-zinc-200 p-6 rounded-lg shadow-md">
+            {/* <h2 className="text-xl font-semibold mb-4 text-gray-800">Still figuring out whether I need this h2 or not, lmao.</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">Add a New Entry</h2> */}
                 <form className="space-y-4">
                     <div>
                         <label htmlFor="postTitle" className="block text-gray-800 mb-1">Movie Title:</label>
@@ -52,7 +52,7 @@ const AddEntryForm = () => {
                         type="button"
                         onClick={onSavePostClicked}
                         disabled={!canSave}
-                        className={`bg-sky-300 text-black px-4 py-2 rounded ${canSave ? 'hover:bg-blue-600 cursor-pointer' : 'cursor-not-allowed'}`}
+                        className={`bg-cyan-200 text-black px-4 py-2 rounded ${canSave ? 'hover:bg-pink-300 cursor-pointer' : 'cursor-not-allowed'}`}
                     >
                         Add Entry
                     </button>
