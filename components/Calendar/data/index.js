@@ -11,17 +11,17 @@ export const INITIAL_EVENTS = [
   },
   {
     id: createEventId(),
-    title: 'Class',
-    start: moment(todayStr).add(1, "days").format("YYYY-MM-DD") + 'T16:00:00'
+    title: 'Dinner with Friends',
+    start: moment(todayStr).add(1, "days").format("YYYY-MM-DD") + 'T19:00:00'
   },
   {
     id: createEventId(),
-    title: "Class",
-    start: moment(todayStr).add(2, "days").format("YYYY-MM-DD") + 'T20:00:00'
+    title: "Intensive",
+    start: moment(todayStr).add(2, "days").format("YYYY-MM-DD") + 'T17:00:00'
   },
   {
     id: createEventId(),
-    title: "Meeting",
+    title: "Breakfast with Family",
     start: moment(todayStr).add(3, "days").format("YYYY-MM-DD") + 'T09:00:00'
   },
   {

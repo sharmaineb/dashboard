@@ -5,8 +5,9 @@ import Image from 'next/image';
 import { FaTasks, FaHeart } from "react-icons/fa";
 import { GiRaceCar } from 'react-icons/gi';
 import { BiCameraMovie } from 'react-icons/bi'
-import { IoMdHome } from 'react-icons/io';
+import { IoHomeOutline } from "react-icons/io5";
 import { HiOutlineAcademicCap } from 'react-icons/hi2';
+import { CiCalendarDate } from "react-icons/ci";
 
 const Sidebar = ({ children }) => {
   return (
@@ -21,35 +22,35 @@ const Sidebar = ({ children }) => {
           <span className='border-b-[1px] border-gray-200 w-full p-2'></span>
           <Link href='/'>
             <div className='bg-cyan-200 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <IoMdHome size={20} />
+              <IoHomeOutline size={20} />
+            </div>
+          </Link>
+          <Link href='/calendar'>
+            <div className='bg-pink-300 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+              <CiCalendarDate size={20} />
             </div>
           </Link>
           <Link href='/school'>
-            <div className='bg-pink-300 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <div className='bg-cyan-200 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <HiOutlineAcademicCap size={20} />
             </div>
           </Link>
           <Link href='/movies'>
-            <div className='bg-cyan-200 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <div className='bg-pink-300 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <BiCameraMovie size={20} />
             </div>
           </Link>
           <Link href='/sports'>
-            <div className='bg-pink-300 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <div className='bg-cyan-200 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <GiRaceCar size={20} />
             </div>
           </Link>
           <Link href='/tasks'>
-            <div className='bg-cyan-200 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <div className='bg-pink-300 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <FaTasks size={20} />
             </div>
           </Link>
         </div>
-        <Link href='/'>
-          <div className='bg-pink-300 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-            <FaHeart size={20} />
-          </div>
-        </Link>
       </div>
       <main className='ml-20 w-full'>{children}</main>
     </div>

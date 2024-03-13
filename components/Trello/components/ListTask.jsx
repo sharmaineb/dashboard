@@ -85,7 +85,7 @@ const Section = ({
 
 const Header = ({ text, bg, count }) => {
   return (
-    <div className={`${bg} flex items-center h-12 pl-4 text-green-400 rounded-t-md uppercase text-sm`}>
+    <div className={`${bg} flex items-center h-12 pl-4 text-cyan-200 rounded-t-md uppercase text-sm`}>
       {text}{" "}
       <div className="ml-auto mr-5 bg-slate-800 w-5 h-5 rounded-full p-4 flex items-center justify-center text-white ">
         {count || 0}
@@ -116,7 +116,7 @@ const Task = ({ task, tasks, setTasks }) => {
     >
       <p>{task.name}</p>
       <button
-        className="absolute top-4 right-1 text-red-400"
+        className="absolute top-4 right-1 text-pink-300"
         onClick={() => handleRemove(task.id)}
       >
         <svg

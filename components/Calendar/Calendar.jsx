@@ -7,7 +7,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import useCalendar from '@/app/calendar';
 import { createEventId } from './data';
 
-const Calendar = () => {
+const CalendarPage = () => {
   const { currentEvents, setCurrentEvents } = useCalendar();
 
   const handleEvents = async (events) => {
@@ -38,8 +38,8 @@ const Calendar = () => {
   };
 
   return (
-    <div className="max-w-screen-md bg-zinc-900 text-white">
-      <div className="shadow-md rounded-lg p-6">
+    <div className="h-screen bg-zinc-900 text-white">
+      <div className="h-full max-w-screen-md mx-auto p-6">
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin, timeGridPlugin]}
           headerToolbar={{
@@ -66,4 +66,4 @@ const Calendar = () => {
   );
 };
 
-export default Calendar;
+export default CalendarPage;

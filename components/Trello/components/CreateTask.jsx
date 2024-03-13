@@ -40,19 +40,21 @@ export const CreateTask = ({ tasks, setTasks }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-center mb-8">
-      <input
-        type="text"
-        placeholder="Enter A New Task"
-        className="border-2 border-gray-400 bg-zinc-900 text-green-300 rounded-md mr-4 h-12 w-64 px-4 focus:outline-none"
-        value={task.name}
-        onChange={(e) => {
-          setTask({ ...task, name: e.target.value });
-        }}
-      />
-      <button className="bg-cyan-200 px-6 py-2 rounded-md text-black font-bold hover:bg-pink-300 focus:outline-none">
-        Create Task
-      </button>
-    </form>
+    <div className="flex justify-center">
+      <form onSubmit={handleSubmit} className="flex items-center mb-8">
+        <input
+          type="text"
+          placeholder="Enter A New Task"
+          className="border-2 border-gray-400 bg-zinc-900 text-green-300 rounded-md mr-4 h-12 w-64 px-4 focus:outline-none"
+          value={task.name}
+          onChange={(e) => {
+            setTask({ ...task, name: e.target.value });
+          }}
+        />
+        <button className="bg-cyan-200 px-6 py-2 rounded-md text-black font-bold hover:bg-pink-300 focus:outline-none">
+          Create Task
+        </button>
+      </form>
+    </div>
   );
 };
