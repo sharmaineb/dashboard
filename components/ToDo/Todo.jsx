@@ -4,9 +4,9 @@ import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 export const Todo = ({ task, deleteTodo, editTodo, toggleComplete }) => {
   return (
-    <div className="flex items-center justify-between border-b border-gray-300 py-2">
+    <div className="flex items-center justify-between border-b border-white py-2">
       <p
-        className={`cursor-pointer ${task.completed ? 'line-through text-gray-500' : 'text-black'}`}
+        className={`cursor-pointer ${task.completed ? 'line-through text-gray-500' : 'text-white'}`}
         onClick={() => toggleComplete(task.id)}
       >
         {task.task}

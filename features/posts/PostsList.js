@@ -8,7 +8,7 @@ const PostsList = () => {
     const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date));
 
     return (
-        <div className="font-oswald bg-gray-900">
+        <div className="font-oswald bg-zinc-900">
             <section className="max-w-screen-xl mx-auto py-16 px-4 lg:px-6">
                 <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
                     <h2 className="font-oswald mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">Recently Watched Films:</h2>

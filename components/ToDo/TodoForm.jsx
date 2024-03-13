@@ -12,6 +12,7 @@ export const TodoForm = ({ addTodo }) => {
   };
 
   return (
+    <div className='bg-zinc-900'>
     <form onSubmit={handleSubmit} className="flex items-center justify-between">
       <input
         type="text"
@@ -27,6 +28,7 @@ export const TodoForm = ({ addTodo }) => {
         Add Task
       </button>
     </form>
+    </div>
   );
 };
 

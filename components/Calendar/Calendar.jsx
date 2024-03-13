@@ -38,8 +38,8 @@ const Calendar = () => {
   };
 
   return (
-    <div className="max-w-screen-md">
-      <div className="bg-white shadow-md rounded-lg p-6">
+    <div className="max-w-screen-md bg-zinc-900 text-white">
+      <div className="shadow-md rounded-lg p-6">
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin, timeGridPlugin]}
           headerToolbar={{

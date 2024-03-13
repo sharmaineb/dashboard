@@ -20,10 +20,10 @@ const WeatherCard = ({ apiKey }) => {
   }, [apiKey]);
 
   return (
-    <div className="bg-white shadow-md rounded p-4">
-      <h2 className="text-lg font-semibold mb-2">Weather</h2>
+    <div className="bg-zinc-900 flex justify-between w-full border shadow-md rounded p-4">
+      <h2 className="text-white text-lg font-semibold mb-2">Weather</h2>
       {weather && (
-        <div className="text-gray-800">
+        <div className="text-white">
           <p className="mb-1">{weather.name}, {weather.sys.country}</p>
           <p className="mb-1">{weather.weather[0].description}</p>
           <p className="font-bold">Temperature: {(weather.main.temp - 273.15).toFixed(1)}°C</p>

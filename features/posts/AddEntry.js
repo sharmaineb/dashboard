@@ -22,7 +22,7 @@ const AddEntryForm = () => {
     const canSave = title && content;
 
     return (
-        <div className="font-oswald bg-gray-900">
+        <div className="font-oswald bg-zinc-900">
             <section className="max-w-2xl mx-auto bg-slate-200 p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-4 text-gray-800">Still figuring out whether I need this h2 or not, lmao.</h2>
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">Add a New Entry</h2>
