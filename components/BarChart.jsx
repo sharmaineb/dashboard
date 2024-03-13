@@ -54,7 +54,7 @@ const ConstructorBarChart = () => {
             {
               label: 'Points',
               data: pointsData,
-              backgroundColor: 'rgb(75, 192, 192)',
+              backgroundColor: 'pink', 
             },
           ],
         });
@@ -76,3 +76,4 @@ const ConstructorBarChart = () => {
 };
 
 export default ConstructorBarChart;
+

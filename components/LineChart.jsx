@@ -56,8 +56,8 @@ const LineChart = () => {
             {
               label: 'Points',
               data: pointsData,
-              borderColor: 'rgb(53, 162, 235)',
-              backgroundColor: 'rgba(0, 0, 0, 0)',
+              borderColor: 'pink', 
+              backgroundColor: 'rgba(0, 0, 0, 0)', 
             },
           ],
         });
@@ -70,11 +70,11 @@ const LineChart = () => {
   }, []);
 
   return (
-    <>
+    <div className='pb-1'>
       <div className='w-full md:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-black'>
         <Line data={chartData} options={chartOptions} />
       </div>
-    </>
+    </div>
   );
 };
 
