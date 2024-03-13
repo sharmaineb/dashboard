@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import ProfileImage from '../public/profile.png';
 
 import { IoCamera } from "react-icons/io5";
 import { FaTasks } from "react-icons/fa";
@@ -47,13 +46,11 @@ const Sidebar = ({children}) => {
                     </div>
                 </Link>
             </div>
-            <div className='mt-auto'>
-                <Link href='/'>
-                    <div className='bg-blue-200 hover:bg-gray-200 cursor-pointer p-3 rounded-lg inline-block'>
-                        <Image src={ProfileImage} alt="Profile" width={20} height={20} />
+            <Link href='/'>
+                    <div className='bg-blue-200 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+                        <IoMdHome size={20} />
                     </div>
-                </Link>
-            </div>
+            </Link>
         </div>
         <main className='ml-20 w-full'>{children}</main>
     </div>
