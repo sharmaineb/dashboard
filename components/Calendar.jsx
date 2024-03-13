@@ -1,24 +1,24 @@
-import React from 'react';
-import FullCalendar from '@fullcalendar/react';
-import dayGridPlugin from '@fullcalendar/daygrid';
+import React from "react";
+import Fullcalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import interactionPlugin from "@fullcalendar/interaction";
 
-const Calendar = () => {
+function Calendar() {
   return (
     <div>
-      <h1>Calendar</h1>
-      <div className='cursor-pointer'>
-      <FullCalendar
-        plugins={[dayGridPlugin]}
-        initialView="dayGridMonth"
-        events={[
-          { title: 'Intensive Kick Off', date: '2024-03-11' },
-          { title: 'Doc Appt', date: '2024-03-12' },
-          // add more events later
-        ]}
+      <Fullcalendar
+        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+        initialView={"dayGridMonth"}
+        headerToolbar={{
+          start: "today prev,next", 
+          center: "title",
+          end: "dayGridMonth,timeGridWeek,timeGridDay", 
+        }}
+        height={"90vh"}
       />
-      </div>
     </div>
   );
-};
+}
 
 export default Calendar;
