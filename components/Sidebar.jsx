@@ -2,8 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { IoCamera } from "react-icons/io5";
-import { FaTasks } from "react-icons/fa";
+import { FaTasks, FaHeart } from "react-icons/fa";
 import { GiRaceCar } from 'react-icons/gi';
 import { BiCameraMovie } from 'react-icons/bi'
 import { IoMdHome } from 'react-icons/io';
@@ -16,7 +15,7 @@ const Sidebar = ({ children }) => {
         <div className='flex flex-col items-center'>
           <Link href='/'>
             <div className='bg-pink-300 text-white p-3 rounded-lg inline-block'>
-              <IoCamera size={20} />
+              <FaHeart size={20} />
             </div>
           </Link>
           <span className='border-b-[1px] border-gray-200 w-full p-2'></span>
@@ -48,7 +47,7 @@ const Sidebar = ({ children }) => {
         </div>
         <Link href='/'>
           <div className='bg-pink-300 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-            <IoMdHome size={20} />
+            <FaHeart size={20} />
           </div>
         </Link>
       </div>

@@ -15,7 +15,7 @@ const QuoteCard = () => {
   }, []);
 
   return (
-    <div className="bg-zinc-900 flex justify-between w-full border p-4 rounded-lg">
+    <div className="bg-zinc-900 flex justify-between w-full border p-4 rounded-lg ml-4">
       <div className="flex flex-col w-full pb-4">
         <p className="text-white">Quote of the Day</p>
         <p className="text-white text-xl font-bold">{quote}</p>

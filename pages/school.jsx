@@ -35,21 +35,68 @@ const SchoolPage = () => {
   const initialAssignments = [
     {
       id: 1,
-      title: "title",
-      teacher: "name",
-      class: "spd",
-      link: "https://github.com/sharmaineb",
+      title: "Spring Intensive",
+      teacher: "Dani",
+      class: "Intensive",
+      link: "https://github.com/sharmaineb/dashboard",
       completed: false
     },
     {
       id: 2,
-      title: "title",
-      teacher: "name",
-      class: "acs 4390",
-      link: "https://github.com/sharmaineb",
+      title: "Assessment",
+      teacher: "Mitchell",
+      class: "ACS 4390",
+      link: "https://github.com/sharmaineb/acs-4390-assessment",
       completed: true
     },
-    // add more assignments here later
+    {
+      id: 3,
+      title: "Final Project",
+      teacher: "Mitchell",
+      class: "ACS 4390",
+      link: "https://github.com/sharmaineb/acs-4390-final-project",
+      completed: true
+    },
+    {
+      id: 4,
+      title: "Landing Page",
+      teacher: "Dan",
+      class: "ENT 1.1",
+      link: "https://github.com/sharmaineb/ent-1.1-landing-page",
+      completed: true
+    },
+    {
+      id: 5,
+      title: "Unit Testing",
+      teacher: "Dani",
+      class: "ACS 4391",
+      link: "https://github.com/sharmaineb/unit-testing",
+      completed: true
+    },
+    {
+      id: 6,
+      title: "React-Redux-Tetris",
+      teacher: "Mitchell",
+      class: "ACS 3330",
+      link: "https://sharmaineb.github.io/react-redux-tetris/",
+      completed: true
+    },
+    {
+      id: 7,
+      title: "Refactoring: Composing Methods",
+      teacher: "Dani",
+      class: "ACS 4391",
+      link: "https://github.com/sharmaineb/composing-methods-refactor-more",
+      completed: true
+    },
+    {
+      id: 8,
+      title: "Websockets",
+      teacher: "Mitchell",
+      class: "ACS 4390",
+      link: "https://github.com/sharmaineb/acs-4390-lesson-7-websockets",
+      completed: true
+    },
   ];
 
   useEffect(() => {
@@ -61,7 +108,7 @@ const SchoolPage = () => {
   return (
     <div className="bg-zinc-900 min-h-screen py-8">
       <div className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold text-white mb-4">School Page</h1>
+        <h1 className="text-3xl font-bold text-white mb-4">Assignments</h1>
         <form
           onSubmit={(e) => {
             e.preventDefault();
