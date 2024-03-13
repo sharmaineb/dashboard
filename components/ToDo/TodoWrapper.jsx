@@ -41,7 +41,7 @@ export const TodoWrapper = () => {
   };
 
   return (
-    <div className="TodoWrapper max-w-md mx-auto">
+    <div className="max-w-md mx-auto bg-white rounded-lg p-4 shadow-md">
       <h1 className="text-2xl font-bold mb-4">Get Things Done!</h1>
       <TodoForm addTodo={addTodo} />
       {/* display todos */}
@@ -61,3 +61,5 @@ export const TodoWrapper = () => {
     </div>
   );
 };
+
+

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import Header from "@/components/Header";
 import Dashboard from "@/components/Dashboard";
-import Calendar from "@/components/Calendar";
+
 
 export default function Home() {
   return (
@@ -17,9 +17,7 @@ export default function Home() {
       <main className='bg-gray-100 min-h-screen'>
         <Header />
         <Dashboard />
-        <div className="p-4 grid md:grid-cols-3 grid-cols-1 gap-4">
-          <Calendar />
-        </div>
+
       </main>
     </>
   );
