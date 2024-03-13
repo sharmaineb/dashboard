@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import { selectAllPosts } from "./postsSlice";
 import TimeAgo from "./Time";
-import ReactionButtons from "./ReactionButton";
 
 const PostsList = () => {
     const posts = useSelector(selectAllPosts);
@@ -28,9 +27,6 @@ const PostsList = () => {
                             <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h2>
                             <p className="mb-5 font-light text-gray-700 dark:text-gray-400">{post.content}</p>
                             <div className="flex justify-between items-center">
-                                <div className="flex items-center space-x-4">
-                                    <ReactionButtons post={post} size="sm" />
-                                </div>
                                 <motion.a
                                     href="#"
                                     className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
