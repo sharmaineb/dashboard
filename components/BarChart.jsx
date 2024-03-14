@@ -41,7 +41,7 @@ const ConstructorBarChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://ergast.com/api/f1/2024/constructorStandings.json');
+        const response = await fetch('https://ergast.com/api/f1/2024/constructorStandings.json');
         const data = await response.json();
 
         const constructorStandings = data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings;

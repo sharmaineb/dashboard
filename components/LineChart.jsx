@@ -41,7 +41,7 @@ const LineChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://ergast.com/api/f1/2024/last/results.json');
+        const response = await fetch('https://ergast.com/api/f1/2024/last/results.json');
         const data = await response.json();
 
         const raceResults = data.MRData.RaceTable.Races[0].Results;

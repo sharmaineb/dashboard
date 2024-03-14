@@ -7,7 +7,7 @@ const F1Schedule = () => {
   useEffect(() => {
     const fetchSchedule = async () => {
       try {
-        const response = await axios.get('http://ergast.com/api/f1/2024.json');
+        const response = await axios.get('https://ergast.com/api/f1/2024.json');
         const races = response.data.MRData.RaceTable.Races.map(race => ({
           ...race,
           time: convertTo12HourFormat(race.time)
