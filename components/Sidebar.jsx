@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
 import { FaTasks, FaHeart } from "react-icons/fa";
 import { GiRaceCar } from 'react-icons/gi';
 import { BiCameraMovie } from 'react-icons/bi'
