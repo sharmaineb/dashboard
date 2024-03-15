@@ -1,20 +1,12 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 const Header = () => {
   return (
-    <>
-      <Helmet>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-      </Helmet>
-      <div className="bg-gradient-to-r from-zinc-900 to-slate-300 mb-3 px-4 py-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-2xl font-bold text-black font-bebas-neue">Hello, Shar!</h1>
-        </div>
+    <header className="bg-gradient-to-r from-gray-900 to-zinc-900 text-white py-4">
+      <div className="container mx-auto px-4">
+        <h1 className="text-2xl text-center font-bebas-neue font-semibold">HELLO, SHAR.</h1>
       </div>
-    </>
+    </header>
   );
 };
 
