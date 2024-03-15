@@ -17,7 +17,7 @@ export const INITIAL_EVENTS = [
   {
     id: createEventId(),
     title: "Intensive",
-    start: moment(todayStr).add(2, "days").format("YYYY-MM-DD") + 'T17:00:00'
+    start: moment(todayStr).add(1, "days").format("YYYY-MM-DD") + 'T17:00:00'
   },
   {
     id: createEventId(),
@@ -26,13 +26,18 @@ export const INITIAL_EVENTS = [
   },
   {
     id: createEventId(),
-    title: "Concert",
+    title: "Hangout with family.",
     start: moment(todayStr).add(5, "days").format("YYYY-MM-DD") + 'T20:00:00'
   },
   {
     id: createEventId(),
-    title: "Hangout",
-    start: moment(todayStr).add(6, "days").format("YYYY-MM-DD") + 'T13:00:00'
+    title: "Class.",
+    start: moment(todayStr).add(6, "days").format("YYYY-MM-DD") + 'T20:00:00'
+  },
+  {
+    id: createEventId(),
+    title: "Class",
+    start: moment(todayStr).add(6, "days").format("YYYY-MM-DD") + 'T9:30:00'
   },
 ]
 

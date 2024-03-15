@@ -1,6 +1,6 @@
 # Personal Dashboard
 
-This is a personal dashboard application built with Next.js and Tailwind CSS. It integrates various APIs including TMDB, NASA, OpenWeather, Formula 1 Ergast, and PokeAPI to provide a range of functionalities. The dashboard aims to help users stay organized, manage their interests, and enhance productivity.
+This is a personal dashboard application built with Next.js and Tailwind CSS. It integrates various APIs including TMDB, NASA, OpenWeather, and Formula 1 Ergast to provide a range of functionalities. The dashboard aims to help users stay organized, manage their interests, and enhance productivity.
 
 ## Dependencies
 
